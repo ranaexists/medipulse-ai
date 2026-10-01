@@ -10,7 +10,7 @@
 
 ---
 
-## 🎯 Executive Abstract & Core Value Proposition
+##  Executive Abstract & Core Value Proposition
 Across 160,000+ public healthcare facilities in rural and peri-urban districts, public medicine supply chains operate under an insidious paradox: **catastrophic stockouts co-exist with systemic expiration waste**. Central portals (such as e-Aushadhi / DVDMS) report high paper stock availability, while ground facilities have zero physical units—a phenomenon known as **Ghost Inventory**. 
 
 **MediPulse AI** transforms passive ledger portals into a proactive, closed-loop clinical logistics intelligence engine. By pairing multimodal **Gemini 2.5 Flash** with localized epidemiological machine learning and Operations Research (FEFO linear solver), MediPulse AI detects stockouts days before they strike, audits phantom records from vernacular voice notes sent by frontline ASHA workers, and prescribes optimal, cold-chain-compliant inter-facility transfers.
@@ -23,21 +23,21 @@ Across 160,000+ public healthcare facilities in rural and peri-urban districts, 
 flowchart TD
     subgraph S1["1. FRONTLINE GROUND TRUTH"]
         ASHA["ASHA Community Workers / ANMs"]
-        VOICE["WhatsApp Vernacular Audio Dispatches\n(Hindi / Dialect Recordings)"]
+        VOICE["WhatsApp Vernacular Audio Dispatches<br/>(Hindi / Dialect Recordings)"]
         ASHA -->|Field Observations| VOICE
     end
 
     subgraph S2["2. MULTIMODAL PERCEPTION & GHOST AUDIT"]
-        VOICE -->|Raw Audio (WAV/MP3/M4A)| GEMINI["Google Gemini 2.5 Flash Engine"]
-        GEMINI -->|Structured JSON Extraction| ENTITY["Clinical Entity Extraction\n(Facility, Drug, Stock=0, Patient Surge)"]
-        ENTITY -->|Zero-Ground vs Portal Check| GHOST_CHECK{"Discrepancy Engine\n(Ghost Stock Check)"}
-        GHOST_CHECK -->|Discrepancy >= 50 units| AUDIT["🚨 Automated Ghost Audit Mandate\nQuarantine Ledger Record"]
+        VOICE -->|"Raw Audio (WAV/MP3/M4A)"| GEMINI["Google Gemini 2.5 Flash Engine"]
+        GEMINI -->|Structured JSON Extraction| ENTITY["Clinical Entity Extraction<br/>(Facility, Drug, Stock=0, Patient Surge)"]
+        ENTITY -->|Zero-Ground vs Portal Check| GHOST_CHECK{"Discrepancy Engine<br/>(Ghost Stock Check)"}
+        GHOST_CHECK -->|Discrepancy >= 50 units| AUDIT["🚨 Automated Ghost Audit Mandate<br/>Quarantine Ledger Record"]
     end
 
     subgraph S3["3. DATA & EPIDEMIOLOGICAL FORECASTING"]
-        LEDGER["Enterprise Relational Pipeline\n(Facilities, Batches, Consumption)"]
-        WEATHER["Met Driver & Epidemic Multipliers\n(Monsoon Lag, Disease Vector Surge)"]
-        ML["Ridge Regression ML Horizon\n(7-Day Rolling District Forecaster)"]
+        LEDGER["Enterprise Relational Pipeline<br/>(Facilities, Batches, Consumption)"]
+        WEATHER["Met Driver & Epidemic Multipliers<br/>(Monsoon Lag, Disease Vector Surge)"]
+        ML["Ridge Regression ML Horizon<br/>(7-Day Rolling District Forecaster)"]
         
         LEDGER --> ML
         WEATHER --> ML
@@ -45,17 +45,16 @@ flowchart TD
     end
 
     subgraph S4["4. PRESCRIPTIVE REDISTRIBUTION SOLVER"]
-        ML -->|7-Day Deficit / Surplus Matrix| FEFO_SOLVER["Constrained FEFO Redistribution Solver\n(Min Distance km, Maximize Shelf-Life)"]
-        FEFO_SOLVER -->|Optimized Route Matrix| TRANSFER["Prescriptive Transfer Orders\n(Source CHC -> Deficit PHC)"]
+        ML -->|7-Day Deficit / Surplus Matrix| FEFO_SOLVER["Constrained FEFO Redistribution Solver<br/>(Min Distance km, Maximize Shelf-Life)"]
+        FEFO_SOLVER -->|Optimized Route Matrix| TRANSFER["Prescriptive Transfer Orders<br/>(Source CHC -> Deficit PHC)"]
     end
 
     subgraph S5["5. DISTRICT COMMAND & GOVERNANCE"]
-        TRANSFER --> UI["Executive District Command Center\n(Interactive Map, SVI Heatmap, One-Click Approval)"]
+        TRANSFER --> UI["Executive District Command Center<br/>(Interactive Map, SVI Heatmap, One-Click Approval)"]
         AUDIT --> UI
-        UI -->|Cryptographic Event Log| AUDIT_TRAIL["Append-Only SRE Audit Trail\n(CSV Export, CMHO Mandates)"]
+        UI -->|Cryptographic Event Log| AUDIT_TRAIL["Append-Only SRE Audit Trail<br/>(CSV Export, CMHO Mandates)"]
         UI -->|What-If Policy Simulator| GEMINI_POLICY["Gemini Executive Policy Memo Generator"]
     end
-```
 
 ---
 
@@ -74,7 +73,7 @@ flowchart TD
 
 ## 🌐 Live Access & Demonstration Assets
 
-- **Production URL**: [Launch MediPulse AI Live App](https://ais-dev-ke536zx6vvududwoai4nuj-750243678968.asia-southeast1.run.app)
+- **Production URL**: [Launch MediPulse AI Live App](https://medipulse-ai-national-medicine-stockout-early-war.ai.studio/)
 - **Shared Production Link**: [https://ais-pre-ke536zx6vvududwoai4nuj-750243678968.asia-southeast1.run.app](https://ais-pre-ke536zx6vvududwoai4nuj-750243678968.asia-southeast1.run.app)
 - **Video Walkthrough (3-Min Demo)**: [Watch YouTube Demo Video](#-3-minute-video-screenplay-walkthrough)
 - **Developer Documentation**: Included inline within the codebase (`app.py`, `src/`).
@@ -90,7 +89,7 @@ flowchart TD
 
 ### 1. Clone & Enter Repository
 ```bash
-git clone https://github.com/itspayalrana/medipulse-ai.git
+git clone https://github.com/ranaexists/medipulse-ai.git
 cd medipulse-ai
 ```
 
