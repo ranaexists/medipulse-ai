@@ -1,0 +1,6 @@
+{
+  "name": "MediPulse AI: National Medicine Stockout Early-Warning & Optimization System",
+  "description": "Production-grade healthcare supply chain intelligence platform for National Health Mission medicine inventory monitoring, ASHA voice triage, demand forecasting, and inter-facility stock redistribution.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

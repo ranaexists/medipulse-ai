@@ -1,0 +1,9 @@
+# MediPulse AI - Production Dependency Specifications
+# Minimal, pinned, conflict-free package requirements for Streamlit Community Cloud & Google Cloud Run
+
+streamlit==1.40.2
+pandas==2.2.3
+numpy==1.26.4
+plotly==5.24.1
+scikit-learn==1.5.2
+google-genai==0.3.0
