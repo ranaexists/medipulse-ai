@@ -55,7 +55,7 @@ flowchart TD
         UI -->|Cryptographic Event Log| AUDIT_TRAIL["Append-Only SRE Audit Trail<br/>(CSV Export, CMHO Mandates)"]
         UI -->|What-If Policy Simulator| GEMINI_POLICY["Gemini Executive Policy Memo Generator"]
     end
-
+```
 ---
 
 ## ⚖️ Core Differentiators: Legacy Portals vs. MediPulse AI
